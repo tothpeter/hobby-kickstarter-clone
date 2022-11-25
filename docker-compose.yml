@@ -3,8 +3,14 @@ version: '3.9'
 services:
   web:
     build: docker
+    command: bin/dev
+    tty: true
+    # command: tail -f /dev/null
     volumes:
       - .:/app
+      - bundle-volume:/usr/local/bundle
+    ports:
+      - '3000:3000'
     depends_on:
       - db
     env_file:
@@ -21,3 +27,4 @@ services:
 
 volumes:
   db-volume:
+  bundle-volume:
