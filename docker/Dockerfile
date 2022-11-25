@@ -10,3 +10,7 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
 
 RUN mkdir /app
 WORKDIR /app
+
+COPY docker-entrypoint.sh /app/docker/docker-entrypoint.sh
+RUN chmod +x docker/docker-entrypoint.sh
+ENTRYPOINT [ "/app/docker/docker-entrypoint.sh" ]
