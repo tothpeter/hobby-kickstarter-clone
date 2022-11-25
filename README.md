@@ -1,24 +1,34 @@
-# README
+# Kickstarter clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a hobby project to practice web development.
 
-Things you may want to cover:
+## Local dev env
 
-* Ruby version
+The local development env is dockerized.
 
-* System dependencies
+Run it the first ime: `bin/setup`
 
-* Configuration
+### Start
 
-* Database creation
+- docker-compose up
+- open http://localhost:3000/
 
-* Database initialization
+### Tests
 
-* How to run the test suite
+```bash
+docker exec -it `docker ps -aqf "name=kickstarter-clone-web-1"` rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Useful commands
 
-* Deployment instructions
+#### To connect to the running web container
 
-* ...
+```bash
+docker exec -it `docker ps -aqf "name=kickstarter-clone-web-1"` bash
+```
+
+#### To open up a rails console
+
+```bash
+docker exec -it `docker ps -aqf "name=kickstarter-clone-web-1"` rails c
+```
