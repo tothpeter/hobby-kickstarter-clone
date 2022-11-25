@@ -32,3 +32,9 @@ docker exec -it `docker ps -aqf "name=kickstarter-clone-web-1"` bash
 ```bash
 docker exec -it `docker ps -aqf "name=kickstarter-clone-web-1"` rails c
 ```
+
+#### To restart the app server withouth restarting the whole stack
+
+```bash
+docker exec -it `docker ps -aqf "name=kickstarter-clone-web-1"` pumactl restart
+```
