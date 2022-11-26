@@ -11,6 +11,7 @@ services:
       - bundle-volume:/usr/local/bundle
     ports:
       - '3000:3000'
+      - '1080:1080'
     depends_on:
       - db
     env_file:

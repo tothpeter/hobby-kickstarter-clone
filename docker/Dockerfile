@@ -8,6 +8,8 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
  && rm -fr /var/lib/apt/lists/* \
  && npm install -g yarn@1
 
+RUN gem install mailcatcher -v 0.8.2
+
 RUN mkdir /app
 WORKDIR /app
 
