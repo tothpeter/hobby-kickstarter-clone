@@ -8,4 +8,7 @@
     = link_to('#', class: 'btn btn-sm') do
       Search
       = bs_icon 'search'
-    = link_to('Login', '#', class: 'btn btn-sm')
+    - if user_signed_in?
+      = link_to('LOGOUT', '#', class: 'btn btn-sm')
+    - else
+      = link_to('Login', new_user_session_path, class: 'btn btn-sm')
