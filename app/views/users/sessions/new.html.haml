@@ -1,6 +1,6 @@
 .content-frame
   .content-frame--body
-    %h2.mb-20 Log in
+    %h2.mb-20.fw-light Log in
     = simple_form_for(resource, url: session_path(resource_name)) do |f|
       = f.input :email, autofocus: true, input_html: { autocomplete: 'email' },
                                          label_html: { class:'d-none' },
