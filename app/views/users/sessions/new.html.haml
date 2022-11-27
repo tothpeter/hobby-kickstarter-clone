@@ -1,15 +1,16 @@
 .content-frame
   .content-frame--body
-    %h2 Log in
+    %h2.mb-20 Log in
     = simple_form_for(resource, url: session_path(resource_name)) do |f|
       = f.input :email, autofocus: true, input_html: { autocomplete: 'email' },
-                                         label_html: { class:'d-none' }
+                                         label_html: { class:'d-none' },
+                                         wrapper_html: { class:'mb-18' }
       = f.input :password, input_html: { autocomplete: 'current-password' },
                                          label_html: { class:'d-none' }
       = f.submit 'Log in', class: 'btn btn-success w-100'
 
       - if devise_mapping.rememberable?
-        = f.input :remember_me, as: :boolean
+        = f.input :remember_me, as: :boolean, wrapper_html: { class:'mt-12' }
   .content-frame--footer.text-center
     New to KickStarter Clone?
     = link_to 'Sign up', new_registration_path(resource_name)
