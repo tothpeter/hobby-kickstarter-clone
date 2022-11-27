@@ -7,6 +7,10 @@
                                          wrapper_html: { class:'mb-18' }
       = f.input :password, input_html: { autocomplete: 'current-password' },
                                          label_html: { class:'d-none' }
+
+      = link_to 'Forgot your password?', new_password_path(resource_name),
+                                         class: 'd-block mt-10 mb-10'
+
       = f.submit 'Log in', class: 'btn btn-success w-100'
 
       - if devise_mapping.rememberable?
