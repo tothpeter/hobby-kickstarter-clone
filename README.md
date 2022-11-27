@@ -2,6 +2,10 @@
 
 This is a hobby project to practice web development.
 
+## Production
+
+https://kickstarter-clone.kalina.tech/
+
 ## Local dev env
 
 The local development env is dockerized.
