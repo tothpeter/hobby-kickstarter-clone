@@ -1,15 +1,15 @@
 %header.main-header.container-fluid
   %nav.left-nav
-    = link_to('Discover', '#', class: 'btn btn-sm')
-    = link_to('Start a project', '#', class: 'btn btn-sm')
+    = link_to('Discover', '#', class: 'btn')
+    = link_to('Start a project', '#', class: 'btn')
   = link_to '/', class: 'logo' do
     = image_tag 'main_header/logo.png', alt: 'KickStarter clone', width: 180
   %nav.right-nav
-    = link_to('#', class: 'btn btn-sm') do
+    = link_to('#', class: 'btn') do
       Search
       = bs_icon 'search'
     - if user_signed_in?
       = button_to('Log Out', destroy_user_session_path, method: :delete,
-                  form_class: 'btn btn-sm', class: 'btn btn-sm')
+                  form_class: 'btn', class: 'btn')
     - else
-      = link_to('Login', new_user_session_path, class: 'btn btn-sm')
+      = link_to('Login', new_user_session_path, class: 'btn')
