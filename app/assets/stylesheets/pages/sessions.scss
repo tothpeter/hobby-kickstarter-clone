@@ -1,0 +1,12 @@
+body.devise-sessions {
+  background-color: $gray-15;
+
+  #main-content {
+    padding: px2rem(60) 0;
+
+    .content-frame {
+      margin: auto;
+      max-width: px2rem(400);
+    }
+  }
+}
