@@ -1,5 +1,6 @@
 // scss-docs-start import-stack
 
+// Inputs
 $input-border-radius: 0;
 $input-font-size: 14px;
 $input-font-weight: 400;
@@ -8,6 +9,9 @@ $input-padding-x: 12px;
 $input-line-height: 1.2;
 $input-focus-box-shadow: 0;
 $form-check-input-focus-box-shadow: 0;
+
+// Buttons
+$btn-border-radius: 0;
 
 // Configuration
 @import 'bootstrap/scss/functions';

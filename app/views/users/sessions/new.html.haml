@@ -6,9 +6,10 @@
                                          label_html: { class:'d-none' }
       = f.input :password, input_html: { autocomplete: 'current-password' },
                                          label_html: { class:'d-none' }
+      = f.submit 'Log in', class: 'btn btn-success w-100'
+
       - if devise_mapping.rememberable?
         = f.input :remember_me, as: :boolean
-      .actions
-        = f.submit 'Log in'
-    = render 'users/shared/links'
-
+  .content-frame--footer.text-center
+    New to KickStarter Clone?
+    = link_to 'Sign up', new_registration_path(resource_name)

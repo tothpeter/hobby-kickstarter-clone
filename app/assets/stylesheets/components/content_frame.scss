@@ -1,9 +1,14 @@
 .content-frame {
-  border: px2rem(1) solid $gray-20;
+  background-color: #fff;
   border-radius: px2rem(2);
+  border: px2rem(1) solid $gray-20;
 }
 
 .content-frame--body {
-  background-color: #fff;
+  padding: px2rem(20) px2rem(30);
+}
+
+.content-frame--footer {
+  border-top: px2rem(1) solid $gray-20;
   padding: px2rem(20) px2rem(30);
 }
