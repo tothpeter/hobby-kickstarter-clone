@@ -2,10 +2,10 @@
 
 // Inputs
 $input-border-radius: 0;
-$input-font-size: 14px;
+$input-font-size: px2rem(14);
 $input-font-weight: 400;
-$input-padding-y: 12px;
-$input-padding-x: 12px;
+$input-padding-y: px2rem(12);
+$input-padding-x: px2rem(12);
 $input-line-height: 1.2;
 $input-focus-box-shadow: 0;
 $form-check-input-focus-box-shadow: 0;
