@@ -80,5 +80,10 @@ group :development do
 
   # Foreman makes it convenient to run commands specified in a Procfile.
   gem 'foreman'
+
+  # A Ruby static code analyzer and formatter,
+  # based on the community Ruby style guide.
+  gem 'rubocop', require: false
+  gem 'rubocop-rails', require: false
 end
 

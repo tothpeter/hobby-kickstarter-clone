@@ -1,0 +1,23 @@
+AllCops:
+  Exclude:
+    - .git/**/*
+    - db/migrate/**/*
+    - db/schema.rb
+    - bin/**/*
+    - node_modules/**/*
+    - storage/**/*
+    - tmp/**/*
+    - vendor/**/*
+    - config.ru
+    - Rakefile
+
+require:
+  - rubocop-rails
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Style/InlineComment:
+  Description: 'Avoid inline comments.'
+  Enabled: false
