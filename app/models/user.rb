@@ -18,9 +18,8 @@ class User < ApplicationRecord
 
   validates :name, length: { maximum: 50 }, presence: true
 
-  validates :username, format:
-                         { with: /\A[a-z0-9_\-]+\z/,
-                            message: 'only allows a-z 0-9 _ -' },
+  validates :username, format: { with: /\A[a-z0-9_\-]+\z/,
+                                 message: 'only allows a-z 0-9 _ -' },
                        length: { in: 1..30 },
                        presence: true,
                        uniqueness: true
