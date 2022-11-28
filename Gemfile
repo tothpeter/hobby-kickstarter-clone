@@ -71,7 +71,10 @@ group :development, :test do
 end
 
 group :test do
+  # Behaviour Driven Development for Ruby
   gem 'rspec-rails', '~> 6.0.0'
+  # Gherkin extension for RSpec
+  gem 'turnip'
 end
 
 group :development do
