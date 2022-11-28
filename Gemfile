@@ -75,6 +75,8 @@ group :test do
   gem 'rspec-rails', '~> 6.0.0'
   # Gherkin extension for RSpec
   gem 'turnip'
+  # Capybara is an integration testing to for Rack-based web apps.
+  gem 'capybara'
 end
 
 group :development do
