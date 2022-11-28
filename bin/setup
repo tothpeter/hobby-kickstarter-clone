@@ -22,8 +22,8 @@ FileUtils.chdir APP_ROOT do
   system!('docker-compose build')
 
   # puts '== Installing dependencies =='
-  # system!('docker-compose run web bundle check || bundle install')
+  # system!('docker-compose run --rm web bundle check || bundle install')
 
   puts '\n== Preparing database =='
-  system!('docker-compose run web rails db:prepare')
+  system!('docker-compose run --rm web rails db:prepare')
 end
