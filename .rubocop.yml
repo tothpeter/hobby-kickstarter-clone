@@ -29,3 +29,4 @@ Style/InlineComment:
 Metrics/BlockLength:
   Exclude:
     - config/environments/development.rb
+    - spec/**/*
