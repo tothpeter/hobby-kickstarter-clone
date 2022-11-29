@@ -4,8 +4,8 @@ services:
   web:
     build: docker
     command: bin/dev
-    tty: true
     # command: tail -f /dev/null
+    tty: true
     volumes:
       - .:/app
       - bundle-volume:/usr/local/bundle
